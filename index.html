@@ -1,0 +1,98 @@
+//1//
+
+const displayWeather = (city,temperature)=> {
+  console.log(`The Weather in ${city} is ${temperature} degree celcious`)
+}
+  console.log(displayWeather("New York", 20)); 
+  // Output: The weather in New York is 20 degrees Celsius.
+
+
+  //2//
+
+  const formatCurrency = (amount, currencyCode) => {
+console.log(`You Have ${amount}  ${currencyCode}`)
+  }
+  console.log(formatCurrency(50.5, "USD")); // Output: You have 50.5 USD.
+  console.log(formatCurrency(100, "EUR"));  // Output: You have 100 EUR.
+
+  //3//
+
+  const displayBookSummary = (title, author, genre) => {
+    console.log( `The book "${title}" written by ${author} belongs to the ${genre} genre.`);
+  };
+  
+  console.log(displayBookSummary("To Kill a Mockingbird", "Harper Lee", "Fiction"));
+  // Output: The book "To Kill a Mockingbird" written by Harper Lee belongs to the Fiction genre.
+
+  //4//
+
+  const displayMovieInfo = (title, year, director) => {
+    return `The movie "${title}" was released in ${year} and directed by ${director}.`;
+  };
+  
+  console.log(displayMovieInfo("Inception", 2010, "Christopher Nolan"));
+  // Output: The movie "Inception" was released in 2010 and directed by Christopher Nolan.
+
+  
+  //5//
+
+  const constructEmail = (recipent,subject) => {
+    console.log(`To:${recipent}
+      subject: ${subject}@
+      dear ${recipent}`)
+  }
+console.log(constructEmail("alice@example.com", "Meeting Reminder"));
+
+
+//6//
+
+const  assessGrade = (score) => {
+
+return score >= 60 ? "you are passing." : "you are failing."
+}
+console.log(assessGrade(75)); // Output: You are passing.
+console.log(assessGrade(60)); // Output: You are passing.
+console.log(assessGrade(45)); // Output: You are failing.
+
+//7//
+
+const showMessage = (item, count) => {
+  return `You have ${count} ${item}${count > 1 ? 's' : ''}.`;
+};
+
+console.log(showMessage("bangle", 10)); // Output: You have 10 bangles.
+console.log(showMessage("lipstick", 1)); // Output: You have 1 lipstick.
+
+
+//8//
+
+const assessMarks = (score, grade) => {
+  return score >= 60 && grade === "A" ? "You are passing." : "You are failing.";
+};
+
+console.log(assessMarks(95, "A")); // Output: You are passing.
+console.log(assessMarks(62, "C")); // Output: You are failing.
+console.log(assessMarks(45, "D")); // Output: You are failing.
+
+//9///
+
+const showMsg = (item1, count1, item2, count2) => {
+  return (count1 > 10 && count2 > 5) ? "You have a good collection." : "You need to update your collection.";
+};
+
+console.log(showMsg("bangle", 11, "lipstick", 6)); // Output: You have a good collection.
+console.log(showMsg("bangle", 5, "lipstick", 1));  // Output: You need to update your collection.
+console.log(showMsg("bangle", 12, "lipstick", 4)); // Output: You need to update your collection.
+
+
+//10//
+
+const shareStationeryMessage = (pencils, erasers) => {
+  return (pencils > 10 && erasers > 5) || (erasers > 10 && pencils > 5) 
+    ? "Please share stationery with friends." 
+    : "Please ask your friends for stationery.";
+};
+
+console.log(shareStationeryMessage(12, 8));  // Output: Please share stationery with friends.
+console.log(shareStationeryMessage(7, 15));  // Output: Please share stationery with friends.
+console.log(shareStationeryMessage(5, 3));   // Output: Please ask your friends for stationery.
